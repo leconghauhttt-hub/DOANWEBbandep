@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng của bạn</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/product.js"></script> 
+</head>
+<body>
+
+<div class="container" style="margin-top: 50px;">
+    <h2 class="text-center">🛒 GIỎ HÀNG CỦA BẠN</h2>
+    <br>
+    
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr class="info">
+                <th>Hình ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody id="cart-body">
+            </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" class="text-right"><strong>TỔNG CỘNG:</strong></td>
+                <td colspan="2" style="color: red; font-size: 18px; font-weight: bold;" id="tong-tien">0đ</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="text-right">
+        <a href="../../index.html" class="btn btn-default">Tiếp tục mua hàng</a>
+        <button onclick="thanhToan()" class="btn btn-success">✔ THANH TOÁN NGAY</button>
+    </div>
+</div>
+
+<script>
+    // --- PHẦN HIỂN THỊ DỮ LIỆU RA MÀN HÌNH ---
+    
+    // 1. Lấy dữ liệu
+    const gioHang = JSON.parse(localStorage.getItem('gioHang')) || [];
+    const tbody = document.getElementById('cart-body');
+    const tongTienEl = document.getElementById('tong-tien');
+    let tongTien = 0;
+
+    // 2. Kiểm tra nếu giỏ rỗng
+    if (gioHang.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" class="text-center">Giỏ hàng đang trống! Hãy đi mua sắm nào.</td></tr>';
+    } else {
+        // 3. Duyệt qua từng sản phẩm để vẽ dòng (Row)
+        gioHang.forEach(sp => {
+            let thanhTien = sp.gia * sp.soLuong;
+            tongTien += thanhTien;
+
+            let row = `
+                <tr>
+                    <td><img src="${sp.hinh}" width="50"></td>
+                    <td>${sp.ten}</td>
+                    <td>${sp.gia.toLocaleString('vi-VN')}đ</td>
+                    <td><input type="number" value="${sp.soLuong}" min="1" style="width: 50px" disabled></td>
+                    <td>${thanhTien.toLocaleString('vi-VN')}đ</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" onclick="xoaKhoiGio('${sp.ten}')">Xóa</button>
+                    </td>
+                </tr>
+            `;
+            tbody.innerHTML += row;
+        });
+    }
+
+    // 4. Hiển thị tổng tiền
+    tongTienEl.innerText = tongTien.toLocaleString('vi-VN') + 'đ';
+
+    // 5. Hàm giả lập Thanh toán
+    function thanhToan() {
+        if(gioHang.length === 0) {
+            alert("Giỏ hàng trống, không thể thanh toán!");
+            return;
+        }
+        alert("Cảm ơn bạn đã mua hàng! Đơn hàng đã được gửi đi.");
+        localStorage.removeItem('gioHang'); // Xóa giỏ hàng sau khi mua
+        location.reload(); // Tải lại trang
+    }
+</script>
+
+</body>
+</html>

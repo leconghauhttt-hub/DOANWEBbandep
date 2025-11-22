@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NE36</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/product.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/dangky.css">
+</head>
+    <div class="header">
+        <div class="container">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="text">
+                        <p style="letter-spacing: 2px;">HOTLINE: 0274 3653 684</p>
+                    </div>
+                </div>
+        
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="../../index.html"><img src="../../picture/logo.png" alt="NESTY - Giày Dép Nam, Nữ "></a>
+                </div>
+                
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div style="display: flex; justify-content: flex-end; align-items: center; height: 100%;">
+                        
+                        <div style="margin-right: 15px;">
+                            <p style="letter-spacing: 2px; margin-bottom: 0; display: inline-block; font-size: 12px;">TÌM KIẾM: </p>
+                            <input type="search" name="Search" id="txtSearch" style="border: 1px solid #ccc; height: 26px;">
+                            <button type="submit" id="btnSearch" style="background-color: white; border: 1px solid #ccc; height: 26px; line-height: 24px;">
+                                <a href="#" id="goSearch" style="font-weight: normal; color: black; text-decoration: none; font-size: 12px;">Search</a>
+                            </button>
+                        </div>
+
+                        <div>
+                            <a href="../giohang.html" style="color: black; font-size: 22px; position: relative; text-decoration: none; display: inline-block; margin-top: 5px;" title="Xem giỏ hàng">
+                                <span class="glyphicon glyphicon-shopping-cart"></span>
+                                <span id="cart-count" style="background-color: red; color: white; font-size: 11px; font-weight: bold; padding: 1px 5px; border-radius: 50%; position: absolute; top: -8px; right: -8px;">0</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <nav class="navbar navbar-inverse">
+              <div class="container-fluid">
+
+                  <ul class="nav navbar-nav" style="margin-left: -15px;">
+                  <li class="active"><a href="../../index.html">TRANG CHỦ</a></li>
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SẢN PHẨM<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                      <li><a href="../../html/oxford.html">DÉP BỆT</a></li>
+                      <li><a href="../../html/derby.html">DÉP SỤC</a></li>
+                      <li><a href="../../html/loafer.html">DÉP THƯỜNG</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="../../html/gioithieu.html">GIỚI THIỆU</a></li>
+                  <li><a href="../../html/he-thong-cua-hang.html">CỬA HÀNG</a></li>
+                  <li><a href="../../html/sitemap.html">MAP</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="../../html/dangky.html"><span class="glyphicon glyphicon-user"></span> ĐĂNG KÝ</a></li>
+                      <li><a href="../../html/dangnhap.html"><span class="glyphicon glyphicon-log-in"></span> ĐĂNG NHẬP</a></li>
+                    </ul>
+              </div>
+          </nav>
+      </div>
+  </div>
+    <div class="container">
+        
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <img src="../../picture/product/of02-1.jpg" alt="" srcset="" width="100%" id="of02-pic">
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <h1>DÉP BỆT NỮ QUAI CHÉO NESTY - NE36</h1>
+            <h2>260.000đ</h2>
+            
+            <button type="button" class="btn btn-default" id="of02-btn1">NÂU</button>
+            
+            <button type="button" class="btn btn-default" id="of02-btn2">KEM</button>
+            <button type="button" class="btn btn-default" id="of02-btn3">ĐEN</button>
+            <br>
+            <br>
+    <div style="margin-top: 15px; margin-bottom: 10px;">
+        <button type="button" class="btn btn-info" onclick="goiAI()" style="width: 100%; font-weight: bold; background-color: #5bc0de; border: none;">
+            ✨ BẤM ĐỂ XEM AI REVIEW VỀ SẢN PHẨM NÀY
+        </button>
+    </div>
+
+<button type="button" 
+        onclick="themVaoGio('DÉP BỆT NỮ QUAI CHÉO - NE36', 260000, '../../picture/product/of02-1.jpg')" 
+        class="btn btn-default btn-group-justified" 
+        style="width: 100%; margin-top: 20px; color: white; background-color: black;">
+    <span style="font-size: large; font-weight: 500;">THÊM VÀO GIỎ (260.000đ)</span><br>
+    Đặt mua giao hàng tận nơi!
+</button>
+            <p style="font-weight: 500;">Chi nhánh Buôn Ma Thuột: <br><span style="font-weight: normal;">33E Lương Thế Vinh, Phường Tân Tiến, Buôn Ma Thuột</span></p>
+            <p style="font-weight: 500;">Chi nhánh Bình Dương:<br><span style="font-weight: normal;">Lô A9,A10,A11 đường N5 KCN Nam Tân Uyên mở rộng, P. Hội Nghĩa, TP Tân Uyên</span></p><br>
+            <img src="../../picture/policy_images_1.svg" alt="" srcset="" width="35px"><span style="color:darkcyan; margin-left: 5px;">KIỂM TRA HÀNG VÀ THANH TOÁN KHI <strong>NHẬN HÀNG</strong></span><br><br>
+            <img src="../../picture/policy_images_2.svg" alt="" srcset="" width="35px"><span style="color:darkcyan; margin-left: 5px;">GIAO HÀNG <strong>TOÀN QUỐC</strong></span><br><br>
+            <img src="../../picture/policy_images_3.svg" alt="" srcset="" width="35px"><span style="color:darkcyan; margin-left: 5px;">SẢN PHẨM GIÀY TÂY BẢO HÀNH <strong>3 NĂM</strong></span><br><br>
+            <img src="../../picture/policy_images_4.svg" alt="" srcset="" width="35px"><span style="color:darkcyan; margin-left: 5px;"><strong>ĐỔI SIZE, ĐỔI MẪU</strong> ĐỐI VỚI SẢN PHẨM CHƯA QUA SỬ DỤNG</span><br><br>
+
+            
+        </div>
+    </div>
+    <div class="footer">
+      
+      <div class="container">
+        
+        <div class="row">
+          
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <a href="../../index.html"><img src="../../picture/logo.png" alt="" srcset="" width="100%"></a>
+            <ul class="list-group">
+              <li class="list-group-item" style="border: 0px;">Thông tin liên hệ</li>
+              <li class="list-group-item" style="border: 0px;">Lô A9,A10,A11 đường N5 KCN Nam Tân Uyên mở rộng, P. Hội Nghĩa, TP Tân Uyên, Bình Dương</li>
+              <li class="list-group-item" style="border: 0px;">Mã số thuế: 3703093370</li>
+              <li class="list-group-item" style="border: 0px;">0274 3653 684</li>
+              <li class="list-group-item" style="border: 0px;">marketing@taiyangshoes.com.vn</li>  
+            </ul>
+          </div>
+          
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <h4 style="text-indent: 12px;">HỖ TRỢ</h4><br>
+            <ul class="list-group">
+              <li class="list-group-item" style="border: 0px;">HƯỚNG DẪN MUA HÀNG</li>
+              <li class="list-group-item" style="border: 0px;">GIAO NHẬN VÀ THANH TOÁN</li>
+              <li class="list-group-item" style="border: 0px;">ĐỔI TRẢ VÀ BẢO HÀNH</li>
+              <li class="list-group-item" style="border: 0px;">ĐĂNG KÝ THÀNH VIÊN</li>
+              <li class="list-group-item" style="border: 0px;">TRA CỨU ĐƠN HÀNG</li>
+              <a href="#" target="blank">
+                <img src="../../picture/bct.webp" style="max-width:70%">
+              </a>
+            </ul>
+            
+          </div>
+          
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <h4 style="text-indent: 12px;">CHÍNH SÁCH</h4><br>
+            <ul class="list-group">
+              <li class="list-group-item" style="border: 0px;">CHÍNH SÁCH ĐỔI HÀNG</li>
+              <li class="list-group-item" style="border: 0px;">CHÍNH SÁCH BẢO HÀNH</li>
+              <li class="list-group-item" style="border: 0px;">CHÍNH SÁCH THANH TOÁN</li>
+              <li class="list-group-item" style="border: 0px;">HÌNH THỨC VẬN CHUYỂN</li>
+              <li class="list-group-item" style="border: 0px;">CHÍNH SÁCH BẢO MẬT</li>
+              <li class="list-group-item" style="border: 0px;">CHÍNH SÁCH BẢO VỆ THÔNG TIN CÁ NHÂN</li>
+            </ul>
+          </div>
+          
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <h4 style="text-indent: 12px;">ĐĂNG KÝ NHẬN TIN</h4><br>
+            <p>Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.</p>
+            
+            <input type="email" name="" id="txtEmail" class="form-control" value="" required="required" title="" placeholder="Nhập địa chỉ email của bạn">
+            <button type="button" class="btn btn-success" style="width: 100%; background-color: black; color: white; margin-top: 5px; border: 0px; font-weight: 500;">ĐĂNG KÝ</button>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p style="text-align: center;font-weight: 500; border-top: 2px solid gainsboro;">Copyright ©2021 NESTY. Thực hiện bởi </p>
+        </div>
+      </div>
+    </div>
+
+        <div id="aiModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background: #000; color: #fff;">
+        <button type="button" class="close" data-dismiss="modal" style="color: #fff;">&times;</button>
+        <h4 class="modal-title">✨ Trợ lý AI - Đánh giá sản phẩm</h4>
+      </div>
+      <div class="modal-body">
+        <div id="aiLoading" style="display:none; text-align: center;">
+            <img src="https://i.gifer.com/ZKZg.gif" style="width: 50px;">
+            <p>AI đang suy nghĩ...</p>
+        </div>
+        <div id="aiContent" style="font-size: 16px; line-height: 1.6; color: #333;"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    const cacLoiReview = [
+        "Sản phẩm này quá tuyệt! Chất da mềm mại, đi êm chân cực kỳ. Rất đáng tiền, 10 điểm cho chất lượng! ⭐⭐⭐⭐⭐",
+        "Mẫu này đang hot trend năm nay đó. Thiết kế ôm chân, phối đồ cực dễ. Mình nghĩ bạn mang màu này là đẹp nhất! 🔥👟",
+        "AI thấy đây là lựa chọn thông minh. Đế chống trượt tốt, độ bền cao. Phù hợp đi làm lẫn đi chơi. Chốt đơn ngay đi ạ! ❤️",
+        "Đây là đôi dép nữ phong cách basic, dễ phối, thoải mái và phù hợp nhiều hoàn cảnh sử dụng.",
+        "Dép bệt nữ quai Nesty là sản phẩm đáng cân nhắc nhờ thiết kế đơn giản nhưng tinh tế, chất liệu bền chắc, dễ phối đồ và giá cả hợp lý. Nó phù hợp cho cả nhu cầu đi làm, đi học lẫn dạo phố, mang lại sự thoải mái và phong cách cho người sử dụng",
+        "Sản phẩm có thiết kế thời trang, chất liệu bền bỉ và thoải mái khi mang. Đây là lựa chọn tuyệt vời cho những ai muốn sở hữu một đôi dép bệt nữ đa năng, phù hợp với nhiều phong cách và hoàn cảnh sử dụng.",
+        "Sản phẩm Nesty này mang phong cách dép bệt nữ hiện đại, kết hợp giữa sự đơn giản và điểm nhấn tinh tế ở phần quai. Đây là lựa chọn phù hợp cho những ai yêu thích sự nhẹ nhàng nhưng vẫn muốn tạo dấu ấn thời trang."
+    ];
+
+    function goiAI() {
+        // 1. Lấy tên sản phẩm 
+        const tenSanPham = document.querySelector('h1') ? document.querySelector('h1').innerText : "Sản phẩm";
+        
+        // 2. Hiện hiệu ứng "Đang suy nghĩ" 
+        $('#aiModal').modal('show');
+        $('#aiContent').hide();
+        $('#aiLoading').show();
+
+        // 3.  đợi 2 giây (2000ms)  AI đang tính toán rồi mới hiện kết quả
+        setTimeout(function() {
+            const reviewNgauNhien = cacLoiReview[Math.floor(Math.random() * cacLoiReview.length)];
+            
+            // Tạo nội dung kết quả
+            const noiDungHienThi = `
+                <b>🤖 AI Review về "${tenSanPham}":</b><br><br>
+                ${reviewNgauNhien}
+            `;
+
+            // 4. Hiện kết quả ra
+            $('#aiLoading').hide();
+            $('#aiContent').html(noiDungHienThi).fadeIn();
+
+        }, 2000); // 2000 = 2 giây
+    }
+</script>
+</body>
+</html>

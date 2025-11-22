@@ -1,0 +1,208 @@
+*{
+    margin: auto;
+    padding: 0px;
+    font-family: SVN-Gotham;
+}
+
+
+@font-face {
+    font-family: SVN-Gotham;
+    src: url(fonts/SVN-Gotham\ Black.otf);
+    font-weight: bolder;
+  }
+@font-face{
+    font-family: SVN-Gotham;
+    src:url(fonts/SVN-Gotham\ Black\ Italic.otf);
+    font-style: italic;
+    font-weight: bolder;
+}
+@font-face {
+    font-family: SVN-Gotham;
+    src: url(fonts/SVN-Gotham\ Bold.otf);
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: SVN-Gotham;
+    src: url(fonts/SVN-Gotham\ Bold\ Italic.otf);
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: SVN-Gotham;
+    src: url(fonts/SVN-Gotham\ Italic.otf);
+    font-style: italic;
+  }
+  @font-face {
+    font-family: SVN-Gotham;
+    src: url(fonts/SVN-Gotham\ Light.otf);
+    font-weight: lighter;
+  }
+
+  @font-face {
+    font-family: SVN-Gotham;
+    src: url(fonts/SVN-Gotham\ Light\ Italic.otf);
+    font-weight: lighter;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: SVN-Gotham;
+    src: url(fonts/SVN-Gotham\ Regular.otf);
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: SVN-Gotham;
+    src: url(fonts/SVN-Gotham\ Thin.otf);
+    font-size: small;
+  }
+
+  @font-face {
+    font-family: SVN-Gotham;
+    src: url(fonts/SVN-Gotham\ Thin\ Italic.otf);
+    font-size: small;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: SVN-Gotham;
+    src: url(fonts/SVN-Gotham\ Book.otf);
+    font-size:medium;
+  }
+
+  @font-face {
+    font-family: SVN-Gotham;
+    src: url(fonts/SVN-Gotham\ Book\ Italic.otf);
+    font-size:medium;
+    font-style: italic;
+  }
+
+
+
+
+.header{
+    position: relative;
+
+}
+
+.header img{
+    height: 150px;
+    top: 50%;
+    right: 50%;
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+}
+
+.header ul li{
+    float:left;
+}
+
+.header a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.header ul{
+    margin-top: 20%;
+    float: right;
+}
+
+.header .text{
+    margin-top: 20%;
+}
+
+.navbar{
+    margin-top: 10px;
+
+    font-weight: bold;
+}
+
+.neo-header{
+    width: 100%;
+    position: relative;
+}
+
+.neo-header img{
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+
+.neo-header h4{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    color: white;
+
+    font-weight: 300;
+}
+
+.neo-header h1{
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    color: white;
+}
+
+.content{
+
+    text-align: center;
+    margin-top: 10px;
+}
+
+.content img{
+    float:none;
+    margin-left: -20px;
+}
+
+.content table{
+    text-align: start;
+}
+
+.login form{
+    margin-left: 25%;
+}
+
+.register form{
+    margin-left: 22%;
+}
+
+.banner{
+    width: 100%;
+}
+
+
+section h4{
+    color: grey;
+}
+
+section h4{
+    text-align: center;
+}
+
+section p{
+    text-align: center;
+}
+
+section h3{
+    text-align: center;
+    line-height: 1.5em;
+    height: 3em;       /* height is 2x line-height, so two lines will display */
+    overflow: hidden;  /* prevents extra lines from being visible */
+}
+
+.footer{
+    clear: both;
+    margin-top: 20px;
+    background-color:rgb(236, 236, 236);
+}
+
+.footer li{
+    background-color: transparent;
+    letter-spacing: 2px;
+    font-size: small;
+}
